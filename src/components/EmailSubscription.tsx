@@ -12,8 +12,8 @@ gsap.registerPlugin(ScrollTrigger);
 const EmailSubscription = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const sectionRef = useRef(null);
-  const cardRef = useRef(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const EmailSubscription = () => {
     return () => ctx.revert();
   }, []);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!email || !email.includes('@')) {

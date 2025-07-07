@@ -5,8 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const MissionStatement = () => {
-  const sectionRef = useRef(null);
-  const quoteRef = useRef(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const quoteRef = useRef<HTMLQuoteElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
