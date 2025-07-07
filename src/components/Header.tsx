@@ -23,10 +23,7 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">S</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">SPLOSH</span>
+            <img src="/logo.png" alt="Splosh Coin" className="w-12 h-12" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,11 +33,10 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`font-medium transition-colors duration-200 ${
-                    location.pathname === item.href 
-                      ? 'text-primary' 
-                      : 'text-muted-foreground hover:text-foreground'
-                  }`}
+                  className={`font-medium transition-colors duration-200 ${location.pathname === item.href
+                    ? 'text-primary'
+                    : 'text-muted-foreground hover:text-foreground'
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -76,11 +72,10 @@ const Header = () => {
                     <Link
                       key={item.name}
                       to={item.href}
-                      className={`text-lg font-medium transition-colors ${
-                        location.pathname === item.href 
-                          ? 'text-primary' 
-                          : 'hover:text-primary'
-                      }`}
+                      className={`text-lg font-medium transition-colors ${location.pathname === item.href
+                        ? 'text-primary'
+                        : 'hover:text-primary'
+                        }`}
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}

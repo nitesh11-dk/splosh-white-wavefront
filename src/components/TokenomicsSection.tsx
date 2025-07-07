@@ -84,11 +84,10 @@ const TokenomicsSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className={`text-2xl font-bold ${
-                  item.highlight 
-                    ? 'bg-gradient-primary bg-clip-text text-transparent' 
+                <p className={`text-2xl font-bold ${item.highlight
+                    ? 'bg-gradient-primary bg-clip-text text-transparent'
                     : 'text-foreground'
-                }`}>
+                  }`}>
                   {item.value}
                 </p>
               </CardContent>

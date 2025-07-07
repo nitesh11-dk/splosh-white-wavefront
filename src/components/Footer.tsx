@@ -68,11 +68,9 @@ const Footer = () => {
         <div className="py-6 border-t border-border/50">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm">
-              © 2024 SPLOSH. All rights reserved.
+              © 2025 SPLOSH. All rights reserved.
             </p>
-            <p className="text-muted-foreground text-sm">
-              Built with ❤️ for the decentralized future
-            </p>
+
           </div>
         </div>
       </div>
