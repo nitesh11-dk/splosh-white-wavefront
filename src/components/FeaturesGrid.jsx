@@ -7,8 +7,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const FeaturesGrid = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const gridRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef(null);
+  const gridRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {

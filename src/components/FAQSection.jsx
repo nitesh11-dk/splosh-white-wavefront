@@ -11,8 +11,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const FAQSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const accordionRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef(null);
+  const accordionRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {

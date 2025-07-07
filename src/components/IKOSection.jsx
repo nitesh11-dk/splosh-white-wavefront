@@ -8,8 +8,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const IKOSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const cardRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef(null);
+  const cardRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {

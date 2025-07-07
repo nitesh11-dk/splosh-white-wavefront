@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 const PartnersCarousel = () => {
-  const carouselRef = useRef<HTMLDivElement>(null);
+  const carouselRef = useRef(null);
 
   const partners = [
     { name: 'Trust Wallet', logo: 'TW' },

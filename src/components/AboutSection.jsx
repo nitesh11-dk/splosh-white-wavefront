@@ -8,9 +8,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const imageRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef(null);
+  const contentRef = useRef(null);
+  const imageRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {

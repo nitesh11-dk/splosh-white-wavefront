@@ -4,13 +4,13 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ArrowUpDown, Wallet } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import Header from '@/components/Header';
+import Header from '@/components/Header.jsx';
 
 const Swap = () => {
   const [sploshAmount, setSploshAmount] = useState('');
   const [usdtAmount, setUsdtAmount] = useState('');
   const [isSwapping, setIsSwapping] = useState(false);
-  const [swapDirection, setSwapDirection] = useState<'splosh-to-usdt' | 'usdt-to-splosh'>('splosh-to-usdt');
+  const [swapDirection, setSwapDirection] = useState('splosh-to-usdt');
   const { toast } = useToast();
 
   const EXCHANGE_RATE = 2.73; // 1 SPLOSH = $2.73 USDT
@@ -25,7 +25,7 @@ const Swap = () => {
     }
   }, [sploshAmount, usdtAmount, swapDirection]);
 
-  const handleSploshChange = (value: string) => {
+  const handleSploshChange = (value) => {
     setSploshAmount(value);
     setSwapDirection('splosh-to-usdt');
     if (value) {
@@ -36,7 +36,7 @@ const Swap = () => {
     }
   };
 
-  const handleUsdtChange = (value: string) => {
+  const handleUsdtChange = (value) => {
     setUsdtAmount(value);
     setSwapDirection('usdt-to-splosh');
     if (value) {
